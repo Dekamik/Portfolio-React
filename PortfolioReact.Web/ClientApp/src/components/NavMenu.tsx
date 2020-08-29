@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { HOME, COUNTER, FETCH_DATA } from './../RoutingConstants';
+
 import './NavMenu.css';
 
 export const NavMenu: React.FunctionComponent = () => {
@@ -20,13 +22,13 @@ export const NavMenu: React.FunctionComponent = () => {
                     <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!isOpen} navbar>
                         <ul className="navbar-nav flex-grow">
                             <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
+                                <NavLink tag={Link} className="text-dark" to={HOME}>Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/counter">Counter</NavLink>
+                                <NavLink tag={Link} className="text-dark" to={COUNTER}>Counter</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/fetch-data">Fetch data</NavLink>
+                                <NavLink tag={Link} className="text-dark" to={FETCH_DATA}>Fetch data</NavLink>
                             </NavItem>
                         </ul>
                     </Collapse>
