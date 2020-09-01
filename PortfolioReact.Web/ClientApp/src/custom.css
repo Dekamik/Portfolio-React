@@ -1,4 +1,22 @@
 /* Provide sufficient contrast against white background */
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    overflow: scroll;
+}
+
+.home {
+    max-width: none;
+    padding: 0;
+    height: 100%
+}
+
+.home-navmenu {
+    margin-bottom: 0 !important;
+}
+
 a {
   color: #0366d6;
 }
@@ -11,4 +29,25 @@ code {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+}
+
+.border-5 {
+    border-width: 5px !important;
+}
+
+.Home-component {
+    background-image: url(./images/sky.jpg);
+
+    height: 100%;
+    width: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 50px;
+}
+
+.home-text {
+    text-shadow: 0px 0px 5px #000000
 }
