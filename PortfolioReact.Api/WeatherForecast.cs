@@ -1,6 +1,6 @@
 using System;
 
-namespace PortfolioReact.Web
+namespace PortfolioReact.Api
 {
     public class WeatherForecast
     {
