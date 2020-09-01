@@ -1,3 +1,4 @@
 ﻿export const HOME = '/';
-export const COUNTER = '/counter';
-export const FETCH_DATA = '/fetch-data';
+export const ABOUT_ME = "/about-me"
+export const PROJECTS = '/projects';
+export const CONTACT = '/contact';

@@ -25,6 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\components\AboutMe.tsx" />
+    <None Remove="ClientApp\src\components\Contact.tsx" />
+    <None Remove="ClientApp\src\components\Projects.tsx" />
     <None Remove="ClientApp\src\RoutingConstants.tsx" />
     <None Remove="ClientApp\src\routing\ApiRouting.tsx" />
   </ItemGroup>

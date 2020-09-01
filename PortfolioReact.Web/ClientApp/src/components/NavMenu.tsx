@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { HOME, COUNTER, FETCH_DATA } from './../routing/WebRouting';
+import { HOME, ABOUT_ME, PROJECTS, CONTACT } from './../routing/WebRouting';
 
 import './NavMenu.css';
 
@@ -25,10 +25,13 @@ export const NavMenu: React.FunctionComponent = () => {
                                 <NavLink tag={Link} className="text-dark" to={HOME}>Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} className="text-dark" to={COUNTER}>Counter</NavLink>
+                                <NavLink tag={Link} className="text-dark" to={ABOUT_ME}>About me</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} className="text-dark" to={FETCH_DATA}>Fetch data</NavLink>
+                                <NavLink tag={Link} className="text-dark" to={PROJECTS}>Projects</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink tag={Link} className="text-dark" to={CONTACT}>Contact</NavLink>
                             </NavItem>
                         </ul>
                     </Collapse>
