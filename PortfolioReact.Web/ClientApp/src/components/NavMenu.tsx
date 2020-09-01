@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { HOME, COUNTER, FETCH_DATA } from './../RoutingConstants';
+import { HOME, COUNTER, FETCH_DATA } from './../constants/RoutingConstants';
 
 import './NavMenu.css';
 

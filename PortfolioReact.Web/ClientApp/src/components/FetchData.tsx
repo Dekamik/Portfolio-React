@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { WEATHER_FORECAST } from './../constants/ApiConstants'
 
 interface IForecast {
     date: Date;
@@ -43,7 +44,7 @@ export const FetchData: React.FunctionComponent = () => {
     }
 
     const populateWeatherData = async () => {
-        const response = await fetch('weatherforecast');
+        const response = await fetch(WEATHER_FORECAST);
         const data = await response.json();
         setForecasts(data);
         setIsLoading(false);
