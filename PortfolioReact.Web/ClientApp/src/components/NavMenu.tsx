@@ -17,9 +17,9 @@ export const NavMenu: React.FunctionComponent = () => {
         <header>
             <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" light>
                 <Container>
-                    <NavbarBrand tag={Link} to="/">PortfolioReact.Web</NavbarBrand>
+                    <NavbarBrand tag={Link} to={HOME}>PortfolioReact.Web</NavbarBrand>
                     <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-                    <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!isOpen} navbar>
+                    <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={isOpen} navbar>
                         <ul className="navbar-nav flex-grow">
                             <NavItem>
                                 <NavLink tag={Link} className="text-dark" to={HOME}>Home</NavLink>

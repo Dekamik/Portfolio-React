@@ -15,7 +15,7 @@ export const FetchData: React.FunctionComponent = () => {
         populateWeatherData();
     }, []);
 
-    const renderForecastsTable = (forecasts) => {
+    const renderForecastsTable = (forecasts: IForecast[]) => {
         return (
             <table className='table table-striped' aria-labelledby="tabelLabel">
                 <thead>
@@ -28,8 +28,8 @@ export const FetchData: React.FunctionComponent = () => {
                 </thead>
                 <tbody>
                     {
-                        forecasts.map(forecast =>
-                            <tr key={forecast.date}>
+                        forecasts.map((forecast, i) =>
+                            <tr key={i}>
                                 <td>{forecast.date}</td>
                                 <td>{forecast.temperatureC}</td>
                                 <td>{forecast.temperatureF}</td>
