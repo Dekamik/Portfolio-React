@@ -19,8 +19,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "charset": "utf8",
-    "sourceMap": false
+    "charset": "utf8"
   },
   "exclude": [
     "node_modules"

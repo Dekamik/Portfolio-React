@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { API_URL, WEATHER_FORECAST } from './../constants/ApiConstants'
+import { API_URL, WEATHER_FORECAST } from './../routing/ApiRouting'
 
 interface IForecast {
     date: Date;
