@@ -16,7 +16,9 @@ export const Projects: React.FunctionComponent = () => {
                 technologies: ["AnyTech1", "AnyTech2"],
                 dateFrom: "2020-01-01",
                 dateTo: "2020-02-01",
-                isHighlighted: true
+                isHighlighted: true,
+                category: "Work",
+                employer: "AnyEmployer"
             },
             {
                 name: "AnyProject2",
@@ -26,7 +28,9 @@ export const Projects: React.FunctionComponent = () => {
                 technologies: ["AnyTech1", "AnyTech2"],
                 dateFrom: "2020-02-01",
                 dateTo: "2020-03-01",
-                isHighlighted: false
+                isHighlighted: false,
+                category: "Work",
+                employer: "AnyEmployer"
             }
         ]);
     }, []);

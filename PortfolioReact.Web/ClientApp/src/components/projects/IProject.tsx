@@ -2,9 +2,11 @@
     name: string;
     role: string;
     description: string;
-    customer: string;
+    customer?: string;
+    employer: string;
     technologies: string[];
     dateFrom: string;
-    dateTo: string;
+    dateTo?: string;
     isHighlighted: boolean;
+    category: "Work" | "Free-time";
 }
