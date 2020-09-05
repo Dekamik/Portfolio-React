@@ -3,7 +3,7 @@ import { Route } from 'react-router';
 import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { AboutMe } from './components/AboutMe';
-import { Projects } from './components/Projects';
+import { Projects } from './components/projects/Projects';
 import { Contact } from './components/Contact';
 import { HOME, ABOUT_ME, PROJECTS, CONTACT } from './routing/WebRouting';
 

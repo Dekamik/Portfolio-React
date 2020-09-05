@@ -35,11 +35,15 @@ code {
     border-width: 5px !important;
 }
 
+.margin-15 {
+    margin: 25px;
+}
+
 .Home-component {
     background-image: url(./images/sky.jpg);
 
-    height: 100%;
     width: 100%;
+    height: 100%;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -50,4 +54,8 @@ code {
 
 .home-text {
     text-shadow: 0px 0px 5px #000000
+}
+
+.project-card {
+    margin-bottom: 15px;
 }
