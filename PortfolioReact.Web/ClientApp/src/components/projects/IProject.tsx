@@ -3,10 +3,10 @@
     role: string;
     description: string;
     customer?: string;
-    employer: string;
+    employer?: string;
     technologies: string[];
-    dateFrom: string;
-    dateTo?: string;
+    dateFrom: Date;
+    dateTo?: Date;
     isHighlighted: boolean;
     category: "Work" | "Free-time";
 }

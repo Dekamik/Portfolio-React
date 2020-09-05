@@ -26,10 +26,13 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\components\AboutMe.tsx" />
+    <None Remove="ClientApp\src\components\Api.tsx" />
     <None Remove="ClientApp\src\components\Contact.tsx" />
     <None Remove="ClientApp\src\components\Projects.tsx" />
     <None Remove="ClientApp\src\components\projects\IProject.tsx" />
     <None Remove="ClientApp\src\components\projects\ProjectCard.tsx" />
+    <None Remove="ClientApp\src\components\projects\ProjectsApi.tsx" />
+    <None Remove="ClientApp\src\helpers\DateHelper.tsx" />
     <None Remove="ClientApp\src\RoutingConstants.tsx" />
     <None Remove="ClientApp\src\routing\ApiRouting.tsx" />
   </ItemGroup>
