@@ -13,13 +13,13 @@ export const Projects: React.FunctionComponent = () => {
         api.getProjects((data: IProject[]) => {
             setProjects(data);
         });
-    }, []);
+    }, [api]);
 
     return (
         <>
             {
-                projects.map((project) => 
-                    <ProjectCard project={project}/>
+                projects.map((project, i) =>
+                    <ProjectCard key={i} project={project}/>
                 )
             }
         </>

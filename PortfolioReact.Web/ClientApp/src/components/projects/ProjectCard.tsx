@@ -20,11 +20,11 @@ export const ProjectCard: React.FunctionComponent<IProjectCard> = ({ project }) 
             </div>
             <div className="card-footer">
                 {
-                    project.technologies.map(tech => 
-                        <>
+                    project.technologies.map((tech, i) =>
+                        <React.Fragment key={i}>
                             <span className="badge badge-primary">{tech}</span>
                             <span>&nbsp;</span>
-                        </>
+                        </React.Fragment>
                     )
                 }
             </div>
