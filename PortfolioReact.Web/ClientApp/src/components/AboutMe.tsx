@@ -7,7 +7,7 @@ export const AboutMe: React.FunctionComponent = () => {
             <p>
 
             </p>
-            <h2>What can I deliver?</h2>
+            <h2>What value do I give?</h2>
             <p>
 
             </p>
