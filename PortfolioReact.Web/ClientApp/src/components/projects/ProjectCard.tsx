@@ -1,6 +1,7 @@
 ﻿import * as React from 'react';
 import { IProject } from './IProject';
 import { dateToString } from './../../helpers/DateHelper';
+import { Badge } from './../common/Badge';
 
 interface IProjectCard {
     project: IProject;
@@ -21,10 +22,7 @@ export const ProjectCard: React.FunctionComponent<IProjectCard> = ({ project }) 
             <div className="card-footer">
                 {
                     project.technologies.map((tech, i) =>
-                        <React.Fragment key={i}>
-                            <span className="badge badge-primary">{tech}</span>
-                            <span>&nbsp;</span>
-                        </React.Fragment>
+                        <Badge key={i}>{tech}</Badge>
                     )
                 }
             </div>
