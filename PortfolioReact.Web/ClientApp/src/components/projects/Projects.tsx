@@ -17,7 +17,7 @@ export const Projects: React.FunctionComponent = () => {
                 setProjects(data);
             },
             (message: string) => {
-
+                console.log(message);
             },
             () => {
                 setIsLoading(false);
