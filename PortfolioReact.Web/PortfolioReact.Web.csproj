@@ -28,6 +28,7 @@
     <None Remove="ClientApp\src\components\AboutMe.tsx" />
     <None Remove="ClientApp\src\components\Api.tsx" />
     <None Remove="ClientApp\src\components\common\Badge.tsx" />
+    <None Remove="ClientApp\src\components\common\Spinner.tsx" />
     <None Remove="ClientApp\src\components\Contact.tsx" />
     <None Remove="ClientApp\src\components\Projects.tsx" />
     <None Remove="ClientApp\src\components\projects\IProject.tsx" />
