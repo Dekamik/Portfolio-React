@@ -1,7 +1,7 @@
 ﻿import { API_URL } from './../routing/ApiRouting'
 
 export class Api {
-    get<TData>(url: string, success: (data: TData) => void, error?: (message: string) => void, final?: () => void) {
+    get(url: string, success: (data: any) => void, error?: (message: string) => void, final?: () => void) {
         fetch(`${API_URL}${url}`)
             .then(async response => {
                 if (response.ok) {
