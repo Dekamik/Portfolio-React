@@ -7,6 +7,9 @@ export class Api {
                 if (response.ok) {
                     success(await response.json());
                 }
+                else {
+                    console.log(response.status, response.statusText);
+                }
             })
             .catch((message: string) => {
                 if (error) {
