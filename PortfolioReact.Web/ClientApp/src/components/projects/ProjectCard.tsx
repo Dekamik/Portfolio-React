@@ -1,6 +1,6 @@
 ﻿import * as React from 'react';
 import { IProject } from './IProject';
-import { dateToString } from './../../helpers/DateHelper';
+import { dateToYearMonthString } from './../../helpers/DateHelper';
 import { Badge } from './../common/Badge';
 
 interface IProjectCard {
@@ -11,8 +11,8 @@ export const ProjectCard: React.FunctionComponent<IProjectCard> = ({ project }) 
     return (
         <div className="card project-card">
             <div className="card-header">
-                {project.category === "Free-time" ? `${project.category}` : `${project.employer}`}
-                <span className="float-right">{dateToString(project.dateFrom)} - {dateToString(project.dateTo)}</span>
+                {project.category === "Free-time" ? `${project.category}` : `${project.employer?.name}`}
+                <span className="float-right">{dateToYearMonthString(project.dateFrom)} - {project.dateTo ? dateToYearMonthString(project.dateTo) : "today"}</span>
             </div>
             <div className="card-body">
                 <h5 className="card-title">{project.customer ? `${project.name} at ${project.customer}` : `${project.name}`}</h5>

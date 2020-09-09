@@ -31,9 +31,12 @@
     <None Remove="ClientApp\src\components\common\Spinner.tsx" />
     <None Remove="ClientApp\src\components\Contact.tsx" />
     <None Remove="ClientApp\src\components\Projects.tsx" />
+    <None Remove="ClientApp\src\components\projects\EmployersData.tsx" />
+    <None Remove="ClientApp\src\components\projects\IEmployer.tsx" />
     <None Remove="ClientApp\src\components\projects\IProject.tsx" />
     <None Remove="ClientApp\src\components\projects\ProjectCard.tsx" />
     <None Remove="ClientApp\src\components\projects\ProjectsApi.tsx" />
+    <None Remove="ClientApp\src\components\projects\ProjectsDummyData.tsx" />
     <None Remove="ClientApp\src\helpers\DateHelper.tsx" />
     <None Remove="ClientApp\src\RoutingConstants.tsx" />
     <None Remove="ClientApp\src\routing\ApiRouting.tsx" />
